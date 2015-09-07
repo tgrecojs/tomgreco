@@ -1,0 +1,72 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<div id="banner">
+    <div class="logo-img row">
+        <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
+            <img class="logo-img" src="assets/images/tg-logo.svg" alt="">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2 class="text-center">Get in Touch with Me Today!</h2>
+    <p>Whether you are curious about any projects I am currently working on, or simply introducing yourself, I enjoy continuously growing my network in the web development community. Therefore, you can easily get in touch by submitting the following information, which I ensure to respond to A.S.A.P </p>
+    <form name="myForm">
+        <div class="form-group">
+            <label for="name">Enter Your Name.</label>
+            <textarea class="form-control name" type="text" name="name" placeholder="Your Name" ng-model="formData.name" required></textarea>
+            <div ng-messages="myForm.name.$error" class="form-error-animation" ng-if="myForm.name.$dirty">
+                <div ng-message="required" class="form-error-animation">This Field is Required</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Enter Your Email Address.</label>
+            <textarea class="form-control name" type="email" name="email" placeholder="youremail@hotmail.com" ng-model="formData.email" required></textarea>
+            <div ng-messages="myForm.email.$error" class="form-error-animation" ng-if="myForm.email.$dirty">
+                <div ng-message="required" class="form-error-animation">This Field is Required</div>
+                <div ng-message="email" class="form-error-animation">Must be a valid email address.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="location">Where are you located?</label>
+            <textarea class="form-control name" type="text" placeholder="New York, NY" name="location" ng-model="formData.location" required></textarea>
+            <div ng-messages="myForm.location.$error" ng-if="myForm.location.$dirty">
+                <div ng-message="required" class="form-error-animation">This Field is Required</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="panel panel-primary">
+                <select ng-model="formData.reason" name="reason" id="reason">
+                    <option value="">Select a Reason for Contacting Me</option>
+                    <option value="Web Development">Question About Web Development</option>
+                    <option value="Graphic Design">Question About Graphic Design</option>
+                    <option value="Job Inquiry">Job Inquiry</option>
+                    <option value="Just Saying Hello">Just Saying Hello</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number (Must be formatted like placeholder):</label>
+            <textarea class="form-control name" type="text" name="phoneNumber" ng-model="formData.phoneNumber" required placeholder="XXX-XXX-XXXX"></textarea>
+            <div ng-messages="myForm.phoneNumber.$error" class="form-error-animation" ng-if="myForm.phoneNumber.$dirty">
+                <div ng-message="required" class="form-error-animation">Must be a valid phone number</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message">Your reason for contacting me today?</label>
+            <textarea class="form-control name" type="text" placeholder="It all begin on a cool October night....." name="message" ng-model="formData.message" required minlength="100" maxlength="1000"></textarea>
+            <div ng-messages="myForm.message.$error" class="form-error-animation" ng-if="myForm.message.$dirty">
+                <div ng-message="required" class="form-error-animation">This Field is Required</div>
+                <div ng-message="minlength" class="form-error-animation">Elabortate a little more please.</div>
+                <div ng-message="maxlength" class="form-error-animation">You've Excited Your Character Number. Try making it a litle more concise</div>
+            </div>
+        </div>
+        <div class="form-group button-row">
+            <a type="submit" ng-disabled="formData.$invalid" ng-click="createUser()" class="button button-border">Click Here to Submit</a></div>
+    </form>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p>Angular Fullstack v2.1.1 |
+            <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
+            <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+    </div>
+</footer>

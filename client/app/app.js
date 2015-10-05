@@ -13,4 +13,6 @@ angular.module('yoTgApp', [
       .otherwise('/');
 
     $locationProvider.html5Mode(true);
+
+    
   });

@@ -1,25 +1,26 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
-<div id="banner">
-    <div class="logo-img row">
-        <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
-            <img class="logo-img" src="assets/images/tg-logo.svg" alt="">
-        </div>
-    </div>
+<div ng-include="'components/header/header.html'"></div>
 </div>
 <div class="container">
     <div class="panel panel-default">
         <div class="panel-heading">Welcome to my Web Application!</div>
         <div class="panel-body">
-            <p>
+            <p class="hidden-xs">
                 Thank you for visiting my web application. My name is Thomas Greco, and I am a software engineer based out of New York City. Currently, my main focus is building both web and mobile applications using JavaScript. That being said, my main areas of expertise are AngularJS, NodeJS, Sass CSS, and I have written a number of articles on using these technologies, as well as many others, for different companies. In addition to working in software development, I come from a background in graphic design, and I am extremely proficient with using different Adobe Creative Cloud Applications. Specifically, I have an extensive bit of knowledge in using PhotoShop, Illustrator, and Premiere Pro.</p>
-            <hr>
-            <p>
+            <hr class="hidden-xs">
+            <p class="hidden-xs">
                 As of late August, I became the newest member of the SitePoint Premium Team. SitePoint Premium (formerly Learnable) provides users with access to books, video tutorials, and is really a great resource for those looking to learn development. The topics I have been dealing with range from creating build systems with GruntJS, to understanding the <code> module.exports </code> statement in JavaScript.
             </p>
-            <hr>
-            <p class="lead"> Below is a list of some of the work I published. </p>
+            <hr class="hidden-xs">
+            <p class="lead hidden-xs"> Below is a list of some of the work I published. </p>
+            <p class="lead hidden-sm hidden-md hidden-lg">
+                If you are interested in working with me, you contact me <a ng-href="/contact"> here!</a> If you are simply poking around, check out some of the work I have published below!
+            </p>
+            <hr class="hidden-sm hidden-md hidden-lg">
             <dl>
-                <dt><a href="http://bit.ly/gruntjs-sp">5 Minutes to Min-Safe Angular Code with Grunt</a></dt>
+                <dt><a href="http://bit.ly/1EON9rO">How to Write Modular Code Angular UI-Router &amp; Named Views</a></dt>
+                <dd>Article of using UI-Router to create an extremely modular, and maintainable AngularJS environment.</dd>
+                <dt><a href="http://bit.ly/gruntjs-sp"> 5 Minutes to Min-Safe Angular Code with Grunt</a></dt>
                 <dd>Here, I teach readers how to add dependency injection annotations to Angular code with Grunt.</dd>
                 <dt><a href="http://bit.ly/1KeLRJb">Understanding the Bower Package Manager</a>
                 </dt>
@@ -27,13 +28,16 @@
                 <dt><a href="http://bit.ly/1Qj3DKg">Up and Running With NativeScript</a></dt>
                 <dd>A concise, yet informative piece on how the NativeScript runtime allows native applications to be built with JavaScript.</dd>
             </dl>
+            <hr>
+            <div class="form-group">
+                <label>Sign up for my newsletter!</label>
+                <input class="form-control" placeholder="Stay updated on my newest material!">
+            </div>
         </div>
     </div>
 </div>
 <footer class="footer">
     <div class="container">
-        <p>Angular Fullstack v2.1.1 |
-            <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
-            <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+        <p>Created by Thomas Greco with <a href="https://twitter.com/tylerhhenkel">@tylerhenkel's</a> Angular-Fullstack </p>
     </div>
 </footer>

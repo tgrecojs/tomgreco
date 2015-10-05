@@ -4,9 +4,7 @@ angular.module('yoTgApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',
-      'link': '/',
-      'title': 'Contact Me',
-      'link': '/contact'
+      'link': '/'
     }];
 
     $scope.isCollapsed = true;

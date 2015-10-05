@@ -11,11 +11,11 @@
         </div>
         <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav navbar-right">
-                <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+                <li ng-repeat="item in menu">
                     <a ng-href="{{item.link}}">{{item.title}}</a>
                 </li>
-                <li ng-class="{active: isActive(item.link)}">
-                    <a ng-href="{{item.link}}">{{item.title}}</a>
+                <li>
+                    <a ng-href="/contact">Contact Me</a>
                 </li>
             </ul>
         </div>

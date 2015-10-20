@@ -15,7 +15,7 @@
                 <div class="form-group">
                     <label for="name">Enter Your Name.</label>
                     <input id="firstname" class="form-control name" type="text" name="name" placeholder="Your Name" ng-model="fullName" required />
-                    <div ng-messages="myForm.name.$error" class="form-error-animation" ng-if="myForm.name.$dirty">
+                    <div ng-messages="myForm.name.$error" class="form-error-animation">
                         <div ng-message="required" class="form-error-animation">This Field is Required</div>
                     </div>
                 </div>

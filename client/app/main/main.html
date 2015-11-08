@@ -1,37 +1,48 @@
-<div ng-include="'components/header/navbar.html'"></div>
+<div ng-include="'components/navbar/navbar.html'"></div>
 <div ng-include="'components/header/header.html'"></div>
 <div class="container">
     <div class="panel panel-default">
-        <div class="panel-heading">Welcome to my Web Application!</div>
+        <div class="panel-heading">Welcome to my domain.</div>
         <div class="panel-body">
             <p class="hidden-xs">
-                Thank you for visiting my web application. My name is Thomas Greco, and I am a software engineer based out of New York City. Currently, my main focus is building both web and mobile applications using JavaScript. That being said, my main areas of expertise are AngularJS, NodeJS, Sass CSS, and I have written a number of articles on using these technologies, as well as many others, for different companies. In addition to working in software development, I come from a background in graphic design, and I am extremely proficient with using different Adobe Creative Cloud Applications. Specifically, I have an extensive bit of knowledge in using PhotoShop, Illustrator, and Premiere Pro.</p>
-            <hr class="hidden-xs">
-            <p class="hidden-xs">
-                As of late August, I became the newest member of the SitePoint Premium Team. SitePoint Premium (formerly Learnable) provides users with access to books, video tutorials, and is really a great resource for those looking to learn development. The topics I have been dealing with range from creating build systems with GruntJS, to understanding the <code> module.exports </code> statement in JavaScript.
-            </p>
-            <hr class="hidden-xs">
-            <p class="lead hidden-xs"> Below is a list of some of the work I published. </p>
-            <p class="lead hidden-sm hidden-md hidden-lg">
-                If you are interested in working with me, you contact me <a ng-href="/contact"> here!</a> If you are simply poking around, check out some of the work I have published below!
-            </p>
-            <hr class="hidden-sm hidden-md hidden-lg">
-            <dl>
-                <dt><a href="http://bit.ly/1EON9rO">How to Write Modular Code Angular UI-Router &amp; Named Views</a></dt>
-                <dd>Article of using UI-Router to create an extremely modular, and maintainable AngularJS environment.</dd>
-                <dt><a href="http://bit.ly/gruntjs-sp"> 5 Minutes to Min-Safe Angular Code with Grunt</a></dt>
-                <dd>Here, I teach readers how to add dependency injection annotations to Angular code with Grunt.</dd>
-                <dt><a href="http://bit.ly/1KeLRJb">Understanding the Bower Package Manager</a>
-                </dt>
-                <dd>Short except that takes the confusion out of Bower for those new to package managers.</dd>
-                <dt><a href="http://bit.ly/1Qj3DKg">Up and Running With NativeScript</a></dt>
-                <dd>A concise, yet informative piece on how the NativeScript runtime allows native applications to be built with JavaScript.</dd>
-            </dl>
-            <hr>
-            <div class="form-group">
-                <label>Sign up for my newsletter!</label>
-                <input class="form-control" placeholder="Stay updated on my newest material!">
-            </div>
+                Hello and welcome to my web application! My name is Thomas Greco, and I am a web developer living in New York city. I specialize in JavaScript development however I am passionate about all technologies. Currently, I am currently working on a few different projects, and I am always looking to work on new projects, and meet new people/ In addition to actually programming, I am a part of the editorial team at SitePoint.com where I publish and edit different information pieces and tutorials meant to teach readers web development. Although most of my work deals with JavaScript, I am heavily intrigued with design, and began my career in technology as a graphic design. As a result of my past working in design, I am lucky enough to have a solid understand of core design concepts. I am currently working on an awesome project that deals with visualizing data using <a href="http://d3js.org">D3.js</a>. If you area interested in chatting about something you may be working on, feel free to contact me via <a ui-sref="contact">this form</a> and I will get back to you ASAP. 
+                <hr class="hidden-xs">
+                <p class="hidden-xs">
+                    As of late August, I became the newest member of the SitePoint Premium Team. SitePoint Premium (formerly Learnable) provides users with access to books, video tutorials; and it is a great resource for those looking to learn development. I personally called upon Learnable when I was striving to learn web development. Now, I release videos weekly that all aim to help developers gain insight to technologies that he or she may find helpful. When deciding what content to record videos, or write about, I simply think about the things that I, as a developer have benefited from learning.
+                </p>
+                <hr class="hidden-xs">
+                <p class="lead hidden-xs"> Below is a list of some of the work I published. </p>
+                <p class="lead hidden-sm hidden-md hidden-lg">
+                    If you are interested in working with me, have a question about my current work, or just say want to say hello, you can get in touch me with me <a ui-sref="contact"> here!</a>
+                </p>
+                <hr class="hidden-sm hidden-md hidden-lg">
+                <dl>
+                    <dt><a href="http://bit.ly/1Je171Y">
+                    Up and Running with GruntJS - Video
+                </a></dt>
+                    <dd>In this video, I provide users a total overview of GruntJS and the things that go into making it work. This video marked the first video of my series "Automating Front End Development with GruntJS".</dd>
+                    <dt><a href="http://bit.ly/1LZsNwl">A Primer On using Flexbox with Compass</a></dt>
+                    <dd>
+                        This article provides readers with a detailed look at how flex-containers respond to different values. Throughout this article, I make use of the Compass CSS framework.
+                    </dd>
+                    <dt><a href="http://bit.ly/1EON9rO">How to Write Modular Code Angular UI-Router &amp; Named Views</a></dt>
+                    <dd>Article of using UI-Router to create an extremely modular, and maintainable AngularJS environment.</dd>
+                    <dt><a href="http://bit.ly/gruntjs-sp"> 5 Minutes to Min-Safe Angular Code with Grunt</a></dt>
+                    <dd>Here, I teach readers how to add dependency injection annotations to Angular code with Grunt.</dd>
+                    <dt><a href="http://bit.ly/1GQsEMP">Understanding PhantomJS</a>
+                    </dt>
+                    <dd>In this article, I work to take the confusion that people often feel when trying to learn about PhantomJS.</dd>
+                </dl>
+                <hr>
+                <form name="myForm" ng-submit="submitEmail()">
+                    <h4>Get notified when I as well as other people I work with publish content that it is extra interesting.</h4>
+                    <div class="form-group">
+                        <input id="email" class="form-control name" type="email" name="email" placeholder="johndoe@hotmail.com" ng-model="email" />
+                    </div>
+                    <div class="form-group button-row">
+                        <button type="submit" class="button button-border">Notify me!</a>
+                    </div>
+                </form>
         </div>
     </div>
 </div>

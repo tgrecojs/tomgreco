@@ -2,7 +2,7 @@
 
 angular.module('yoTgApp')
     .controller('ContactCtrl', function($scope, $http) {
-        $scope.message = 'Hello';
+
         $scope.sendForm = function() {
             var data = ({
                 name: $scope.fullName,

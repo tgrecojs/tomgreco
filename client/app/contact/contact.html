@@ -14,23 +14,23 @@
                 <div class="form-group">
                     <label for="name">Enter Your Name.</label>
                     <input id="firstname" class="form-control name" type="text" name="name" placeholder="Your Name" ng-model="fullName" required />
-                    <div ng-messages="myForm.name.$error" class="form-error-animation">
-                        <div ng-message="required" class="form-error-animation">This Field is Required</div>
+                    <div ng-messages="myForm.name.$error" class="form-error" ng-if="myForm.name.$dirty">
+                        <div ng-message="required" class="form-error">This Field is Required</div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email">Enter Your Email Address.</label>
                     <input id="email" class="form-control name" type="email" name="email" placeholder="youremail@hotmail.com" ng-model="email" required />
-                    <div ng-messages="myForm.email.$error" class="form-error-animation" ng-if="myForm.email.$dirty">
-                        <div ng-message="required" class="form-error-animation">This Field is Required</div>
-                        <div ng-message="email" class="form-error-animation">Must be a valid email address.</div>
+                    <div ng-messages="myForm.email.$error" class="form-error" ng-if="myForm.email.$dirty">
+                        <div ng-message="required" class="form-error">This Field is Required</div>
+                        <div ng-message="email" class="form-error">Must be a valid email address.</div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="location">Where are you located?</label>
                     <input id="location" class="form-control name" type="text" placeholder="New York, NY" name="location" ng-model="userLocation" required />
                     <div ng-messages="myForm.location.$error" ng-if="myForm.location.$dirty">
-                        <div ng-message="required" class="form-error-animation">This Field is Required</div>
+                        <div ng-message="required" class="form-error">This Field is Required</div>
                     </div>
                 </div>
                 <div class="form-group">
@@ -45,17 +45,17 @@
                 <div class="form-group">
                     <label for="phoneNumber">Phone Number (Must be formatted like placeholder):</label>
                     <input id="phone" class="form-control name" type="text" name="phoneNumber" ng-model="phoneNumber" required placeholder="XXX-XXX-XXXX">
-                    <div ng-messages="myForm.phoneNumber.$error" class="form-error-animation" ng-if="myForm.phoneNumber.$dirty">
-                        <div ng-message="required" class="form-error-animation">Must be a valid phone number</div>
+                    <div ng-messages="myForm.phoneNumber.$error" class="form-error" ng-if="myForm.phoneNumber.$dirty">
+                        <div ng-message="required" class="form-error">Must be a valid phone number</div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="message">Your reason for contacting me today?</label>
                     <textarea id="message" class="form-control name" type="text" placeholder="It all begin on a cool October night....." name="message" ng-model="message" required minlength="100" maxlength="1000"></textarea>
-                    <div ng-messages="myForm.message.$error" class="form-error-animation" ng-if="myForm.message.$dirty">
-                        <div ng-message="required" class="form-error-animation">This Field is Required</div>
-                        <div ng-message="minlength" class="form-error-animation">Elabortate a little more please.</div>
-                        <div ng-message="maxlength" class="form-error-animation">You've Excited Your Character Number. Try making it a litle more concise</div>
+                    <div ng-messages="myForm.message.$error" class="form-error" ng-if="myForm.message.$dirty">
+                        <div ng-message="required" class="form-error">This Field is Required</div>
+                        <div ng-message="minlength" class="form-error">Elabortate a little more please.</div>
+                        <div ng-message="maxlength" class="form-error">You've Excited Your Character Number. Try making it a litle more concise</div>
                     </div>
                 </div>
                 <div class="form-group button-row">

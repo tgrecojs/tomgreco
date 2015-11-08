@@ -51,7 +51,7 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Your reason for contacting me today?</label>
-                    <input id="message" class="form-control name" type="text" placeholder="It all begin on a cool October night....." name="message" ng-model="message" required minlength="100" maxlength="1000">
+                    <textarea id="message" class="form-control name" type="text" placeholder="It all begin on a cool October night....." name="message" ng-model="message" required minlength="100" maxlength="1000"></textarea>
                     <div ng-messages="myForm.message.$error" class="form-error-animation" ng-if="myForm.message.$dirty">
                         <div ng-message="required" class="form-error-animation">This Field is Required</div>
                         <div ng-message="minlength" class="form-error-animation">Elabortate a little more please.</div>

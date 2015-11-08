@@ -9,7 +9,7 @@ var ClientSchema = new Schema({
     location: String,
     reason: String,
     phoneNumber: String,
-    messageInput: String,
+    message: String,
     date: {
         type: Date,
         default: Date.now

@@ -206,7 +206,9 @@ select {
 
 // Component styles are injected through grunt
 // injector
+@import 'arrests/arrests.scss';
 @import 'contact/contact.scss';
+@import 'd3/d3.scss';
 @import 'main/main.scss';
 @import 'meet-with-me/meet-with-me.scss';
 @import 'modal/modal.scss';

@@ -1,0 +1,17 @@
+<div class="col-md-12">
+    This is the arrests view.
+</div>
+<div class="container">
+    <div class="row">
+        <h3>Search Crime:</h3>
+        <input placeholder="DUI" type="text" ng-model="searchInput">
+        <div class="btn btn-default" ng-click="getDataByCrime()">Search by Crime</div>
+        <div class="btn btn-default" ng-click="getDataByTeam()">Search By Team</div>
+        <div ng-repeat="p in players">
+            <table class="table">
+                <th>Crime :</th>
+                <td> {{ p }}</td>
+            </table>
+        </div>
+    </div>
+</div>
